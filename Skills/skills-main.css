@@ -1,0 +1,169 @@
+main{
+  color: black;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: auto;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.paragraph{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.full-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.container{
+  background-color: rgba(75, 75, 75, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(75, 75, 75, 0.45);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  
+}
+
+.container div i{
+  font-size: 22px;
+}
+
+.list{
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+.main-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 850px){
+  .full-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paragraph{
+    padding: 0px 15px;
+  }
+
+  .container div{
+    padding: 5px 15px;
+  }
+
+  .main-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: auto;
+  }
+  
+  .content div{
+    width: auto;
+  }
+
+  .paragraph{
+    margin: auto;
+    padding: 0px 12px;
+    width: 80%;
+  }
+
+  .paragraph p{
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .container{
+    width: 250px;
+    height: 250px;
+  }
+
+  h1{
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+}
+
+.content h1, .paragraph{
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.targets{
+  opacity: 0;
+  transform: translateX(-110%);
+  transition: transform 0.75s;
+}
+
+.show{
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.targets:nth-child(1){
+  transition-delay: 200ms;
+}
+
+.targets:nth-child(2){
+  transition-delay: 400ms;
+}
+
+.targets:nth-child(3){
+  transition-delay: 600ms;
+}

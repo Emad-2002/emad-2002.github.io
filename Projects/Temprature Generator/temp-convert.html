@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="temp-convert.css">
+  <link rel="stylesheet" href="preloader.css">
+  <link rel="icon" href="/Pictures/infinite-logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+
+  <title>Temprature Converter</title>
+</head>
+<body>
+  <div id="pre-loader"></div>
+  <div class="temp-converter">
+    <h3>Temprature Converter</h3>
+
+    <div class="choices">
+      <h4>Convert From:</h4>
+      <div style="display: flex; justify-content: space-between; gap: 15px;">
+        <div>
+          <input type="checkbox" name="choice-1" id="choice-1">
+          <label for="choice-1">Fahrenheit to Celsius</label>
+        </div>
+        <br>
+        <div>
+          <input type="checkbox" name="choice-2" id="choice-2">
+          <label for="choice-2">Celsius to Fahrenheit</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="converter">
+      <div class="Fahrenheit">
+        <label for="f">Enter Fahrenheit</label>
+        <input type="number" id="fah" name="f">
+        <div style="display: flex; gap:5px;">
+          <button id="Fbtn" onclick="myFtoC()">Fahrenheit to Celsius</button>
+          <button class="reset1" onclick="myReset1()">Reset</button>
+        </div>
+        <p id="result1"></p>
+      </div>
+      
+      <div class="Celsius">
+        <label for="c">Enter Celsius</label>
+        <input type="number" id="cel" name="c">
+        <div style="display: flex; gap:5px;">
+          <button onclick="myCtoF()">Celsius to Fahrenheit</button>
+          <button class="reset2" onclick="myReset2()">Reset</button>
+        </div>
+        <p id="result2"></p>  
+      </div>
+    </div>
+  
+  </div>
+  <script src="temp-convert.js"></script>
+</body>
+</html>

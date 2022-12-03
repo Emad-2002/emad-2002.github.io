@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="guess-game.css">
+  <link rel="stylesheet" href="preloader.css">
+  <link rel="icon" href="/Pictures/infinite-logo.png">
+  <title>Guess The Number Game</title>
+</head>
+<body>
+  <div id="pre-loader"></div>
+  <div class="game-container">
+    <button id="game" onclick="myGenerator()"><i class="fa-solid fa-circle-play"></i>Start Game</button>
+    <p id="message">Please guess and enter a number from 1 to 10</p>
+    <label for="user">Enter Guessed Number:</label>
+    <input type="number" id="user" name="user" readonly>
+    <div>
+      <button id="submit" onclick="myValidator()">Submit Guess</button>
+      <button id="retry-wrong" onclick="gameRetry()">Replay ?</button>
+      <button id="retry-correct" onclick="gameRetry()">Play Again ?</button>      
+    </div>
+    <p id="demo"></p>
+  </div>
+  
+
+  <script src="guess-game.js"></script>
+</body>
+</html>

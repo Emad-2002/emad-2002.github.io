@@ -1,0 +1,70 @@
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: url(/Pictures/black-370118.png);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Ubuntu;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+#full-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1b1b;
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+}
+
+#container{
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time{
+  text-align: center;
+  box-shadow: 1px 1px 5px gray, -1px -1px 5px gray;
+  border-radius: 6px;
+  width: 50px;
+  height: 50px;
+}
+
+#item-container{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+@media screen and (max-width: 800px){
+  #full-container{
+    width: 340px;
+    height: 200px;
+    margin: auto;
+  }
+
+  .time{
+    width: 40px;
+    height: 50px;
+    margin: auto;
+  }
+
+  #label{
+    font-size: 14px;
+  }
+
+  #item-container{
+    gap: 10px;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/Pictures/infinite-logo.png">
+
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="general-form.css">
+    <link rel="stylesheet" href="form-class.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <title>Portfolio Feedback Form</title>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="pre-loader"></div>
+    
+    <header>
+      <div class="left-section">
+        <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+        <p></p>
+      </div>
+      
+      <div class="right-section">
+        <div class="date-holder">
+          <p id = "date"></p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="full-form-container">
+
+        <h1>Portfolio Feedback Form</h1>
+        
+        <form id="top-form" method="get">
+          
+          <!-- top div start-->
+          <div class="div-1">
+              <div class="left-side">
+  
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" size="30"><br>
+  
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname"><br>
+                
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age">
+              
+              </div>
+  
+              <div class="right-side">
+  
+                <label for="occupation">Occupation:</label>
+                <input type="text" id="occupation" name="occupation" size="30"><br>
+                
+                <label for="email">Enter your Email:</label>
+                <input type="text" name="email" id="email"><br>
+  
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone">
+                
+              </div>
+          </div>
+          <!--top div end-->
+  
+          <!--middle div start-->
+          <div class="div-2">
+            <div class="q-container">
+              <p>How was the overall experience of the Portfolio:</p>
+              <input type="radio" id="one" name="q-1" value="1">
+              <label for="one">1</label>
+              <br>
+              <input type="radio" id="two" name="q-1" value="2">
+              <label for="two">2</label>
+              <br>
+              <input type="radio" id="three" name="q-1" value="3">
+              <label for="three">3</label>
+              <br>
+              <input type="radio" id="four" name="q-1" value="4">
+              <label for="four">4</label>
+              <br>
+              <input type="radio" id="five" name="q-1" value="5">
+              <label for="five">5</label>
+              <br><br>
+              <p>Please provide any suggestions to improve the Portfolio:</p>
+              <textarea name="q-2" id="q-2" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <!--middle div end-->
+            
+        </form>
+  
+        <!--submit button for form-->
+        <input type="submit" value="Submit Form" form="top-form" form="middle-form">
+        
+        <!--style with JS-->
+        <button class="submit-button-after">&check;</button>
+        <!--end with JS styling-->
+        
+        <!--submit button end-->
+      </div>
+    </main>
+    
+
+    <footer>
+      <div>
+        <p>footer</p>
+      </div>
+    </footer>
+
+    <script src="functions.js"></script>
+  </body>
+</html>

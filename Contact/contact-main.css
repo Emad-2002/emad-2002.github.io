@@ -1,0 +1,180 @@
+main{
+  color: black;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: auto;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.holder{
+  gap: 10px;
+  border-bottom: 2px solid black;
+}
+
+.emad{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.top-part-form{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.left-side-form,.right-side-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-part-form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.bottom-part-form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.full-form-container{
+  background-color: #E8EAE6;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+textarea{
+  resize: none;
+  background-color: #D7D7D7;
+  color: #333;
+  border-radius: 5px;
+}
+
+textarea:focus{
+  outline: 2px solid whitesmoke;
+}
+
+input{
+  background-color: #D7D7D7;
+  color: #333;
+  border-radius: 5px;
+  padding: 6px;
+  border: none;
+}
+
+input:focus{
+  background-color: #D7D7D7;
+  color: #333;
+  outline: 2px solid whitesmoke;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  box-shadow: 0 0 0 30px #D7D7D7 inset;
+}
+
+input::placeholder,textarea::placeholder{
+  color: #333;
+}
+
+.other-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 800px){
+  .full-form-container{
+    width: 95%;
+    padding: 0;
+  }
+
+  .form-container{
+    width: auto;
+  }
+  
+  form{
+    width: auto;
+    padding: 10px;
+  }
+
+  .top-part-form{
+    gap: 10px;
+  }
+
+  #fname,#lname{
+    width: 90%;
+  }
+
+  label{
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 28px;
+  }
+
+  h2{
+    font-size: 19px;
+  }
+
+  h3{
+    font-size: 16px;
+  }
+
+  .emad{
+    width: 250px;
+    height: 250px;
+  }
+
+  .full-form-container{
+    margin-left: 10px;
+  }
+}
+
+.content h1, .emad{
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.targets{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
+}
+
+.show{
+  opacity: 1;
+  transform: translateX(0);
+}

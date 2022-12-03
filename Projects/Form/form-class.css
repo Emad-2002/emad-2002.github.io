@@ -1,0 +1,89 @@
+.full-form-container{
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: auto;
+}
+
+@media screen and (max-width:972px) {
+  
+  .full-form-container{
+    width: 85%;
+  }
+}
+
+.div-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.left-side{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-side, .right-side{
+  margin: 10px 15px;
+}
+
+.left-side div, .right-side div{
+  margin: 15px 0px;
+}
+
+.left-side input, .right-side input{
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.submit-button-after{
+  display: none;
+}
+
+.div-2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 15px;
+}
+
+.q-container{
+  width: 100%;
+}
+
+#q-2{
+  width: 75%;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  border: 1px solid ;
+}
+
+.fa-house{
+  color: black;
+}
+
+.fa-house::after{
+  color: black;
+}
+
+
+

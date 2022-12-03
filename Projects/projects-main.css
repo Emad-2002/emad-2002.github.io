@@ -1,0 +1,155 @@
+main{
+  color: black;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+}
+
+main .page-title{
+  text-align: center;
+  color: black;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin: auto;
+  gap: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.rows{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container{
+  background-color: rgba(232, 234, 230, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid rgba(232, 234, 230, 0.45);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon-main{
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 850px) {
+  .content {
+    width: auto;
+  }
+
+  .content.active{
+    margin-top: 200px;
+  }
+
+  .rows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .content div{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 28px;
+  }
+}
+
+main h1{
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.targets{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
+}
+
+.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.targets:nth-child(1){
+  transition-delay: 200ms;
+}
+.targets:nth-child(2){
+  transition-delay: 400ms;
+}
+.targets:nth-child(3){
+  transition-delay: 600ms;
+}
+
+.targets2{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
+}
+
+.show2{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.targets2:nth-child(1){
+  transition-delay: 200ms;
+}
+.targets2:nth-child(2){
+  transition-delay: 400ms;
+}
+.targets2:nth-child(3){
+  transition-delay: 600ms;
+}
+
+.targets3{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
+}
+
+.show3{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.targets3:nth-child(1){
+  transition-delay: 200ms;
+}
+.targets3:nth-child(2){
+  transition-delay: 400ms;
+}
+
+.targets3:nth-child(3){
+  transition-delay: 600ms;
+}
