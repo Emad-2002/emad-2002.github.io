@@ -63,6 +63,7 @@ textarea{
   background-color: #D7D7D7;
   color: #333;
   border-radius: 5px;
+  font-family: 'Sora', sans-serif;
 }
 
 textarea:focus{
@@ -75,6 +76,7 @@ input{
   border-radius: 5px;
   padding: 6px;
   border: none;
+  font-family: 'Sora', sans-serif;
 }
 
 input:focus{
