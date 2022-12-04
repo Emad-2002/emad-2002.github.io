@@ -1,3 +1,11 @@
+// Page Loader
+var loader = document.getElementById("pre-loader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+});
+
+
 let quotes = [
   {
     "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
@@ -6231,20 +6239,6 @@ function myCopy(){
 }
 
 function mySpeak(){
-  let speaker = new SpeechSynthesisUtterance(`${jokesPicker.text}   said by   ${jokesPicker.author}`);
-  speechSynthesis.speak(speaker);
-  speakBtn.disabled = true;
-  speakBtn.style.opacity = "0.5";
-  setTimeout(()=>{
-    speakBtn.disabled = false;
-    speakBtn.style.opacity = "1";
-  } , 1200);
+  let speaker = new SpeechSynthesisUtterance(`${quotesPicker.text}   said by   ${quotesPicker.author}`);
+  speechSynthesis.speak(speaker); 
 }
-
-
-// Page Loader
-var loader = document.getElementById("pre-loader");
-
-window.addEventListener("load", function(){
-  loader.style.display = "none";
-});
