@@ -1,5 +1,4 @@
 html,body{
-  display: grid;
   height: 100%;
   width: 100%;
   place-items: center;
@@ -9,6 +8,14 @@ html,body{
   font-family: Ubuntu;
   letter-spacing: 2px;
   overflow: hidden;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 #full-container{
@@ -67,4 +74,19 @@ html,body{
   #item-container{
     gap: 10px;
   }
+}
+
+.developer{
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a::after{
+  text-decoration: none;
+  color: white;
 }
