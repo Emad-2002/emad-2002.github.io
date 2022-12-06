@@ -64,6 +64,7 @@ textarea{
   color: #333;
   border-radius: 5px;
   font-family: 'Sora', sans-serif;
+  padding: 6px;
 }
 
 textarea:focus{
