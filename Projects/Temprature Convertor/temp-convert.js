@@ -31,7 +31,6 @@ function myFtoC(){
   
 }
 
-
 function myCtoF(){
   c = document.getElementById("cel").value;
   CtoF = (c*1.8)+32;
@@ -69,3 +68,23 @@ function myReset2(){
   result2.innerHTML = "";
   document.querySelector(".reset2").style.display = "none";
 }
+
+let fah = document.getElementById("fah");
+let Fbtn = document.getElementById("Fbtn");
+
+fah.addEventListener("keyup", e =>{
+  if(e.key === "Enter"){
+    Fbtn.click();
+    console.log("Enter Pressed on FAH");
+  }
+});
+
+let cel = document.getElementById("cel");
+let Cbtn = document.getElementById("Cbtn");
+
+cel.addEventListener("keyup", e =>{
+  if(e.key === "Enter"){
+    Cbtn.click();
+    console.log("Enter Pressed CEL");
+  }
+});

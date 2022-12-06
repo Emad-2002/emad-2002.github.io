@@ -5,7 +5,7 @@ html,body{
   background-image: url(/Pictures/black-370118.png);
   background-repeat: no-repeat;
   color: white;
-  font-family: Ubuntu;
+  font-family: 'Sora',sans-serif;
   letter-spacing: 2px;
   overflow: hidden;
 }
@@ -16,6 +16,7 @@ body{
   margin: auto;
   align-items: center;
   justify-content: center;
+  
 }
 
 #full-container{
@@ -77,7 +78,7 @@ body{
 }
 
 .developer{
-  margin-top: 10px;
+  margin-top: 20px;
   padding-bottom: 5px;
 }
 
@@ -89,4 +90,9 @@ a{
 a::after{
   text-decoration: none;
   color: white;
+}
+
+.home-link-icon{
+  height: 20px;
+  width: 20px;
 }
