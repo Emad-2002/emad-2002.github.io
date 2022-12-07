@@ -46,7 +46,6 @@ function myGuess(){
   document.getElementById("demo").style.display = "block";
 }
 
-
 function gameRetry(){
   document.getElementById("user").value = "";
   document.getElementById("demo").style.display = "none";
@@ -54,3 +53,12 @@ function gameRetry(){
   document.getElementById("retry-correct").style.display = "none";
   myGenerator();
 }
+
+let user = document.getElementById("user");
+let submit = document.getElementById("submit");
+
+user.addEventListener("keyup",e => {
+  if(e.key === "Enter"){
+    submit.click();
+  }
+})

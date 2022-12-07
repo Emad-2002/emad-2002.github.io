@@ -123,6 +123,10 @@ a::after{
   padding-bottom: 5px;
 }
 
+.developer a{
+  font-family: 'Sora', sans-serif;
+}
+
 #logo2{
   display: none;
 }
