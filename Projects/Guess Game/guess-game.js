@@ -37,7 +37,7 @@ function myGuess(){
     document.getElementById("retry-correct").style.display = "inline-block";
   }
   else{
-    let answer = document.getElementById("demo").innerHTML = "Wrong Answer the Correct Answer is: " + gNum; 
+    let answer = document.getElementById("demo").innerHTML = "Wrong Answer the Correct Answer is : " + gNum; 
     console.log(answer);
     document.getElementById("user").readOnly=true;
     document.getElementById("retry-wrong").style.display = "inline-block";

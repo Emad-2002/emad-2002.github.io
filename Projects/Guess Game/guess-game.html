@@ -17,10 +17,11 @@
 </head>
 <body>
   <div id="pre-loader"></div>
+
   <div class="game-container">
     <button id="game" onclick="myGenerator()"><i class="fa-solid fa-circle-play"></i>Start Game</button>
     <p id="message">Please guess and enter a number from 1 to 10</p>
-    <label for="user">Enter Guessed Number:</label>
+    <label for="user">Enter Guessed Number :</label>
     <input type="number" id="user" name="user" readonly>
     <div>
       <button id="submit" onclick="myValidator()">Submit Guess</button>
@@ -29,7 +30,8 @@
     </div>
     <p id="demo"></p>
   </div>
-  
+
+  <div class="developer" style=" display:flex; align-items: center; gap: 4px;">Made by <a class="home-link-icon" href="/index.html"><img id="logo2" style="width: 20px;" src="/Pictures/infinite-logo-dark-mode.png"></a><a href="/index.html">Emad Waseem</a></div>
 
   <script src="guess-game.js"></script>
 </body>
