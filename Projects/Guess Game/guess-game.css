@@ -143,3 +143,10 @@ a::after{
   width: 20px;
 }
 
+@media screen and (max-width:800px){
+  .game-container{
+    width: 85%;
+    padding: 20px;
+  }
+}
+
